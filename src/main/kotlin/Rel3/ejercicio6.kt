@@ -1,6 +1,5 @@
-package Functions
+package Rel3
 
-import org.jetbrains.annotations.TestOnly
 import kotlin.math.sqrt
 
 fun calcPuntos(p1 : Punto, p2 : Punto): Double{
