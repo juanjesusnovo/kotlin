@@ -8,7 +8,7 @@ class Circulo(
     fun circulo(x : Int, y: Int, radio: Int){
 
     }
-    override fun mover(x: Int,y: Int):Boolean{
+    /*override fun mover(x: Int,y: Int):Boolean{
         return super Punto.mover(x,y)
-    }
+    }*/
 }
