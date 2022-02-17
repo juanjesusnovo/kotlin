@@ -6,7 +6,11 @@ class Rectangulo(
     x : Int,
     y : Int
 ) : Punto(x,y){
-    fun rectangulo(ancho: Int,alto: Int,x: Int,y: Int){
+    override fun mover(x: Int, y: Int): Boolean {
+        return super.mover(x, y)
+    }
 
+    override fun dibujar() {
+        super.dibujar()
     }
 }
