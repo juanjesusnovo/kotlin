@@ -1,13 +1,14 @@
 package ExamenJavaMayo
 
-abstract class GraficoCompuesto (
+class GraficoCompuesto(
     var graficos : ArrayList<Grafico>
         ): Grafico{
     override fun mover(x: Int, y: Int): Boolean {
-        if(x <= 800 || y <= 600){
-            return true
+        var seMueve = true
+        for (grafico in graficos){
+            if (!grafico.mover(x,y)){seMueve = false}
         }
-        return false
+        return seMueve
     }
 
     override fun dibujar() {
